@@ -3,44 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Azzurro Polvere — Color Spec</title>
+  <title>Azzurro Polvere — Pop Design</title>
   <style>
     :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans JP',Helvetica,Arial;}
     body{
       margin:0;
       padding:40px;
-      background:#A9C6D9;
-      color:#111;
+      background:#A9C6D9; /* 背景をAzzurro Polvereに変更 */
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .card{
+      border-radius:50%;
+      width:200px;
+      height:200px;
       display:flex;
       flex-direction:column;
       align-items:center;
-      justify-content:flex-start;
-      line-height:1.7;
-    }
-    .card{
-      background:rgba(255,255,255,0.85);
-      padding:22px 26px;
-      border-radius:16px;
-      max-width:420px;
-      box-shadow:0 6px 16px rgba(0,0,0,0.1);
+      justify-content:center;
+      text-align:center;
+      background:rgba(255,255,255,0.3); /* 半透明の色 */
+      border:2px solid rgba(255,255,255,0.55); /* 半透明の枠 */
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
       backdrop-filter:blur(4px);
+      padding:16px;
     }
-    .title{font-size:20px;font-weight:700;margin-bottom:12px;text-align:center;}
-    .hex{font-family:monospace;font-size:15px;color:#333;margin-bottom:12px;text-align:center;}
-    .section{font-size:14px;color:#222;margin-bottom:10px;}
+
+    .card h2{margin:0;font-size:16px;}
+    .card .hex{font-family:monospace;margin:6px 0;}
+    .card .section{font-size:12px;color:#222;}
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="title">#A9C6D9</div>
-    <div class="hex">Azzurro Polvere（アッズーロ・ポルヴェレ）</div>
-    <div class="section">イタリアの伝統色。海霧のような、灰みを含む淡いパウダーブルー。</div>
 
-    <div class="section"><b>RGB：</b> R=169 / G=198 / B=217</div>
-    <div class="section"><b>HSB：</b> H=204° / S=22% / B=85%</div>
-    <div class="section"><b>LAB：</b> L=79.6 / a=-3.6 / b=-10.4</div>
-    <div class="section"><b>CMYK：</b> C=22% / M=9% / Y=0% / K=15%</div>
- 　 <div class="section">Tone：LightGrayish</div>
+  <div class="card">
+    <h2>Azzurro Polvere</h2>
+    <div class="hex">#A9C6D9</div>
+    <div class="section"><b>RGB:</b> R=169 / G=198 / B=217</div>
+    <div class="section"><b>CMYK:</b> C=22% / M=9% / Y=0% / K=15%</div>
+    <div class="section">Tone / Light / Grayscale</div>
   </div>
+
 </body>
 </html>
