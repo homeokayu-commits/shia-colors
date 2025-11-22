@@ -1,57 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Azurro Polvere</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #A9C6D9; /* Azurro Polvere */
-        color: #2f3a44;
-        font-family: "Noto Sans JP", sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azzurro Polvere — Color Spec</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans JP',Helvetica,Arial;}
+    body{
+      margin:0;
+      padding:40px;
+      background:#A9C6D9;
+      color:#111;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      line-height:1.7;
     }
-
-    .box {
-        background: rgba(255, 255, 255, 0.55);
-        backdrop-filter: blur(4px);
-        padding: 24px 32px;
-        border-radius: 16px;
-        max-width: 500px;
-        text-align: center;
+    .card{
+      background:rgba(255,255,255,0.85);
+      padding:22px 26px;
+      border-radius:16px;
+      max-width:420px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.1);
+      backdrop-filter:blur(4px);
     }
-
-    h1 {
-        margin-top: 0;
-        font-size: 1.5em;
-    }
-
-    .rgb {
-        margin-top: 6px;
-        font-size: 0.9em;
-        opacity: 0.8;
-    }
-</style>
+    .title{font-size:20px;font-weight:700;margin-bottom:12px;text-align:center;}
+    .hex{font-family:monospace;font-size:15px;color:#333;margin-bottom:12px;text-align:center;}
+    .section{font-size:14px;color:#222;margin-bottom:10px;}
+  </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Azurro Polvere（アズッロ・ポルヴェレ）</h1>
-        <p>
-            イタリアの伝統色「Azurro Polvere」は、<br>
-            “ほこりをかぶった水色（Powder Blue）” を意味する、<br>
-            灰みがかった柔らかい青色です。<br><br>
-            澄んだ水色よりも落ち着きがあり、<br>
-            やさしさ・静けさ・透明感を感じさせる色合いです。
-        </p>
-        <p class="rgb">
-            ■ Hex: #A9C6D9<br>
-            ■ RGB: R=169, G=198, B=217
-        </p>
-    </div>
+  <div class="card">
+    <div class="title">#A9C6D9</div>
+    <div class="hex">Azzurro Polvere（アッズーロ・ポルヴェレ）</div>
+    <div class="section">イタリアの伝統色。海霧のような、灰みを含む淡いパウダーブルー。</div>
+
+    <div class="section"><b>RGB：</b> R=169 / G=198 / B=217</div>
+    <div class="section"><b>HSB：</b> H=204° / S=22% / B=85%</div>
+    <div class="section"><b>LAB：</b> L=79.6 / a=-3.6 / b=-10.4</div>
+    <div class="section"><b>CMYK：</b> C=22% / M=9% / Y=0% / K=15%</div>
+ 　 <div class="section">Tone：LightGrayish</div>
+  </div>
 </body>
 </html>
