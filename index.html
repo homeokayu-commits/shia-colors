@@ -8,12 +8,12 @@
     :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans JP',Helvetica,Arial;}
     body{
       margin:0;
-      padding:40px;
+      padding:20px; /* 余白を少なめにして embed サイズを縮小 */
       background:#A9C6D9; /* 背景をAzzurro Polvereに変更 */
       display:flex;
       justify-content:center;
       align-items:center;
-      height:100vh;
+      height:auto; /* Notionで高さが伸びすぎないように調整 */
     }
 
     .card{
@@ -25,7 +25,7 @@
       align-items:center;
       justify-content:center;
       text-align:center;
-      background:rgba(255,255,255,0.3); /* 半透明の色 */
+      background:rgba(255,255,255,0.6); /* 半透明の色 */
       border:2px solid rgba(255,255,255,0.55); /* 半透明の枠 */
       box-shadow:0 4px 12px rgba(0,0,0,0.1);
       backdrop-filter:blur(4px);
