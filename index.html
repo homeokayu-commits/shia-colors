@@ -3,44 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Azzurro Polvere — Pop Design</title>
+  <title>Azzurro Polvere — Responsive Card</title>
   <style>
-    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans JP',Helvetica,Arial;}
+    :root{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans JP',Helvetica,Arial;
+      --color:#A9C6D9;
+    }
+
     body{
       margin:0;
       padding:20px;
-      background:#A9C6D9;
-      display:flex;              /* 画面中央に固定 */
-      justify-content:center;    /* 横中央 */
-      align-items:center;        /* 縦中央 */
-      min-height:100vh;          /* 画面高さに合わせて中央固定 */
+      background:var(--color);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
       box-sizing:border-box;
     }
 
+    /* ★ スマホでも崩れない“縮んでOK”型デザイン */
     .card{
-      border-radius:50%;
-      width:260px;
-      height:260px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
+      width:90%;              /* 画面の幅に合わせて縮む */
+      max-width:280px;        /* PCでは大きくなりすぎない */
+      background:rgba(255,255,255,0.65);
+      border:2px solid rgba(255,255,255,0.6);
+      border-radius:20px;     /* 丸枠に近いけど、形が崩れない */
+      padding:24px;
       text-align:center;
-      background:rgba(255,255,255,0.6); /* 半透明の色 */
-      border:2px solid rgba(255,255,255,0.55); /* 半透明の枠 */
       box-shadow:0 4px 12px rgba(0,0,0,0.1);
       backdrop-filter:blur(4px);
-      padding:16px;
     }
 
-    .card h2{margin:0;font-size:16px;}
-    .card .hex{font-family:monospace;margin:6px 0;}
-    .card .section{font-size:12px;color:#222;}
+    h2{margin:0;font-size:18px;}
+    .hex{font-family:monospace;margin:8px 0;font-size:14px;}
+    .section{font-size:13px;color:#222;margin-top:4px;}
   </style>
 </head>
 <body>
 
-  <div class="card" style="margin:40px auto;">
+  <div class="card">
     <h2>Azzurro Polvere</h2>
     <div class="hex">#A9C6D9</div>
     <div class="section"><b>RGB:</b> R=169 / G=198 / B=217</div>
